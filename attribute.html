@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+</head>
+<style>
+  
+    a[target]{
+        text-decoration: none;
+        border: 2px solid darkgrey;
+        color: black;
+        padding: 3px;
+        font-weight: bold;    
+    }
+    a[target="_blank"]{
+        color: yellow;
+    }
+    p[title~="paragraf"]{
+        font-weight: bold;
+    }
+    [class|="item"]{
+        color: red;
+    }
+
+</style>
+<body>
+    <div>
+        <a href="#" target="_blank">Link1</a>
+        <a href="#"target="self">Link2</a>
+        <a href="#" target="_blank">Link3</a>
+    </div>
+    <div>
+        <p title="paragraf p1">Lorem ipsum dolor sit amet.</p>
+        <p title="paragraf p2" >Error inventore nemo ipsa temporibus.</p>
+        <p title="paraf p3">Magnam accusamus excepturi consequatur illum?</p>
+    </div>
+    <div>
+        <ul>
+            <li class="item" >Lorem, ipsum dolor.</li>
+            <li class="item1">Consectetur, eligendi reiciendis.</li>
+            <li class="item-2">Necessitatibus, iure officia.</li>
+            <li class="textitem">Necessitatibus, iure officia.</li>
+        </ul>
+    
+</body>
+</html>

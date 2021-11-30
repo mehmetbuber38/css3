@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+   
+</head>
+<style>
+    div{ /* div icindekılere dıstan 15 px bosluk verıldı.*/
+        margin: 15px;
+    }
+    a{
+        border: 3px solid grey;
+        background-color: aquamarine;
+        margin-left: 5px;
+         padding: 5px 5px 5px 5px;
+         font-size: 25pt;
+         text-decoration: none;   
+    }
+    a.hover{
+        background-color: #494949;
+        color: #fff;
+    }
+    input[type="text"]{ /*input olup tipi text olanların hepesine bu ozellık uygulandı*/
+        border: 5px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    input[type="text"]:focus{ /*input olup tipi text olup ustune tıklandıgında bu olayları yaptı*/ 
+        border-color: red;
+        box-shadow: 0px 0px 5px red;
+    }
+    li:first-child{ /*ol-ul larda ilk li ye bu ozellık uygulandı yazı fontunu kalın yaptı*/ 
+        font-weight: bold;
+    }
+    li:last-child{  /*ol-ul larda son li ye bu ozellık uygulandı yazının altını çizdi.*/ 
+        text-decoration: underline;
+    }
+    li:nth-child(2){ /*ol-ul larda 2. li ye bu ozellık uygulandı yazının rengini  kırmızı yaptı.*/ 
+        color: red;
+    }
+    
+   
+</style>
+<body>
+    <div>
+    <a href="#">Bana Tıkla</a>
+    </div> 
+    <div>
+        <input type="text" placeholder="Mesajı Yazın">
+    </div>
+    <hr>
+    <ul>
+        <li>
+            <p>Lorem, ipsum dolor.</p>
+        </li>
+        <li>
+        <p>Lorem, ipsum dolor.</p>
+        </li>
+        <li>
+          <p>Lorem, ipsum dolor.</p>
+        </li>
+    </ul>
+    <ol>
+        <li>
+           <p>Lorem, ipsum dolor.</p>
+        </li>
+        <li>
+            <p>Lorem, ipsum dolor.</p>
+        </li>
+        <li>
+            <p>Lorem, ipsum dolor.</p>
+        </li>
+    </ol>
+
+    
+</body>
+</html>

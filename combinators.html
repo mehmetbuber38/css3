@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+</head>
+<style>
+    /*descentant (torun) selector*/
+    div p{
+        font-weight: bold;
+    }
+    /* child (çocuk) selector*/
+    div > p{
+        text-decoration: underline;
+    }
+    /*adjasent (bitişik) sibling selector*/
+    div + p{
+        color: red;
+    }
+    /*general sibling selector.*/
+    div ~ p{
+        font-style: italic;
+    }
+    /*div ile olup sınıfı paragraf olana uygular*/
+    div.paragraf{
+        background-color: blue;
+    }
+
+
+
+</style>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ea, quidem magnam facere dignissimos eaque
+        tempore. Autem, odit delectus pariatur magnam ratione corporis quos veniam sed temporibus eius quod unde.
+    </p>
+    <div>
+        <ul>
+            <li>
+                <p>Lorem, ipsum dolor.</p>
+            </li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+        </ul>
+    </div>
+    <div class="paragraf">
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae temporibus doloremque voluptatem
+            voluptas obcaecati non aliquam fugit aspernatur blanditiis repellendus voluptatum magnam sunt hic, dolorem,
+            quam fuga magni laboriosam cumque?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi perspiciatis culpa, in recusandae vitae deleniti
+        est quas nesciunt, saepe esse fugit accusantium similique inventore at facilis debitis, expedita ut corporis?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, odit! Numquam molestiae quis quidem, ipsam,
+        voluptate officiis labore harum voluptas unde necessitatibus reiciendis maxime quibusdam, ducimus temporibus
+        soluta sit iure?</p>
+
+</body>
+
+</html>

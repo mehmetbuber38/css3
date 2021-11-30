@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 0;
+            
+        }
+        li{
+            /*border: 2px solid red;*/
+            background-color: rgb(61, 189, 61);
+            display: inline-block; /*Yan yana getirmemıze yarar ve width- height gibi özellikleri kullanabiliriz.*/
+            padding: 5px;
+            margin: 3px;
+            width: 150px;
+            text-align: center;
+        }
+        li:hover{
+            background-color: greenyellow
+        }
+        .iki{
+          /*  visibility: visible;*/ /* Varsayılan olarak kullanılır ekranda gösterılmesini yapar.*/
+            visibility: hidden; /* .iki sınıfı olan elementi yerını ekranda kaybetmeden gizlememize yarar.*/
+        }
+        a{
+            text-decoration: none;
+            color: white;
+      }
+
+
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li><a href="#">Lorem, ipsum .</a></li>
+        <li class="iki"><a href="#">Saepe, iusto .</a></li>
+        <li><a href="#">Temporibus, dolore .</a></li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Style</title>
+
+    <style>
+        a {
+            display: block;
+        }
+
+        /* a:link {
+            color: greenyellow;
+            border: 2px solid red;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+            border: 2px solid rgb(175, 166, 43)(0, 17, 255);
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blue;
+            border: 2px solid rgb(238, 238, 238);
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: greenyellow;
+            border: 2px solid red;
+            padding: 10px;
+            text-decoration: none;
+        } */
+
+        .link-hover:hover {
+            background: red;
+        }
+
+        .link-focus:focus {
+            background: gainsboro;
+        }
+    </style>
+</head>
+
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe laudantium nemo. Voluptatum porro nulla
+        magnam similique omnis nobis dolores nisi, iure assumenda alias quisquam, odio officia quod in earum!
+    </p>
+
+    <div>
+        <a href="www.google.com.tr" target="_blank">Google Ana Sayfa</a>
+    </div>
+
+
+    <div>
+        <a href="www.google.com.tr" target="_blank" class="link-hover">Google Ana Sayfa</a>
+    </div>
+
+    <div>
+        <a href="www.google.com.tr" target="_blank" class="link-focus">Google Ana Sayfa</a>
+    </div>
+
+</body>
+
+</html>

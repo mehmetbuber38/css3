@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+</head>
+<style>
+    p::first-line{
+        font-weight: bold;
+        color: red;
+        text-decoration: underline;
+    }
+    p::first-letter{
+        font-size: xx-large;     
+    }
+    ::selection{
+        background-color: purple;
+        color: yellow;
+    }
+    h1::before{
+        content:url(../css3/assent/12032231_10153605408858718_2148010152608055709_n.jpg);
+    }
+</style>
+
+<body>
+    <h1>
+        Lorem ipsum dolor sit.
+    </h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas expedita distinctio praesentium blanditiis
+            doloribus perspiciatis laboriosam reprehenderit in sit tenetur placeat eum obcaecati quaerat commodi,
+            repellendus nemo neque facere delectus.</p>
+    </div>
+    <div>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam iusto laboriosam officiis quas! Id tenetur quod
+        impedit odit maxime. Tenetur labore suscipit obcaecati doloribus quam nemo in rerum excepturi iusto!
+    </div></p>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflows</title>
+</head>
+<style>
+    .kutu{
+        border: 2 solid grey;
+        width: 200px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgb(61, 60, 60);
+        overflow: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+/* contentedittable yaparak sayfada tabloya ıstedıklerımızı yazabılırız. */
+    }
+
+</style>
+
+<body>
+    <div class="kutu">
+        <p contenteditable="" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil amet dicta, nemo laudantium adipisci
+            molestias tempore. Nesciunt sequi architecto distinctio, mollitia, numquam, dolore ipsa ad assumenda amet
+            nulla culpa quod.</p> 
+    </div>
+
+</body>
+
+</html>
