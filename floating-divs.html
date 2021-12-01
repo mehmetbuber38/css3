@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Divs</title>
+    <style>
+        #container{
+            background: gray;
+            overflow: auto;
+        }
+        .box{
+            width: 170px;
+            height: 170px;
+            margin: 2px;
+        }
+        #first{
+            background: red;
+            
+        }
+        #second{
+            background: yellow;
+            visibility: hidden; /*second sıınıfını ekrandan kaldırır fakat yerını arkaplanda koruma saglar.*/
+           
+        
+        }
+        #third{
+            background: black;
+           
+        }
+        /*.clearfix{
+            overflow: auto;
+        }*/
+        p::after{
+            content: "-deneme";
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container" class="clearfix">
+    <div id="first" class="box"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, exercitationem!</p></div>
+    <div id="second" class="box"></div>
+    <div id="third" class="box"></div>
+</div>
+    <p>
+        Lorem, ipsum dolor.
+    </p>
+
+</body>
+
+</html>
