@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box1{
+            box-sizing: content-box; /*content box da bız ne kadar deger verırsek onları kapsayarak çalısır. width-height artırır.*/ 
+            width: 300px;
+            height: 100px;
+            background: red;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 10px solid black;
+        }
+        
+        .box2{
+            box-sizing: border-box;/* widht-height ne akdar verılmısse onun kadar yapar. verilen degerlerı ıcerıden alır*/
+            width: 300px;
+            height: 100px;
+            background: gold;
+            padding: 10px;
+            border: 10px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>

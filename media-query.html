@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Media Query</title>
+    <style>
+        .clear {
+            overflow: auto;
+            /*kod ıle beraber eger paragrafta veya rresımde taşma olursa otomatık olarak onlarıda cervece yapacak. */
+        }
+
+        p {
+            border: 3px solid gray;
+            padding: 5px;
+
+        }
+
+        img {
+            float: left;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: gray;
+            width: 100%;
+            height: 400px;
+            color: #fff;
+            border: 1px solid;
+        }
+
+        @media (min-width:768px) and (max-width: 992px) {
+            .card {
+                flex-direction: row;
+                background: red;
+                color: #000;
+                max-width: 400px;
+                border: 3px solid yellow;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>Başlık</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex dolor totam doloribus libero placeat in
+            adipisci ut! Laboriosam exercitationem temporibus consectetur suscipit iusto pariatur voluptatum, ipsum
+            aspernatur quis alias!</p>
+
+        <img src='http://lorempixel.com/g/300/400/business' alt='ANAN' />
+    </div>
+
+</body>
+
+</html>
