@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Media Queries</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        @media (max-width:575px) {
+            .phone h1 {
+                display: block;
+            }
+        }
+
+        /*Landspace  */
+        @media (min-width:576px) and (max-width: 767px) {
+            .landscape h1 {
+                display: block;
+            }
+
+            body {
+                background-color: green;
+            }
+        }
+
+        /* Tables */
+        @media (min-width:768px) and (max-width:991px) {
+            .tables h1 {
+                display: block;
+            }
+
+            body {
+                background-color: red;
+            }
+
+        }
+
+        /* Desktop */
+        @media (min-width:992px) and (max-width:1199px) {
+            .desktop h1 {
+                display: block;
+            }
+
+            body {
+                background-color: yellow;
+            }
+
+        }
+
+        /* Large Desktop */
+        @media (min-width:1200px) and (max-width:1399px) {
+            .large h1 {
+                display: block;
+            }
+
+            body {
+                background-color: orange;
+            }
+
+        }
+
+        /* xLarge Desktop */
+        @media (min-width:1400px) {
+            .xlarge h1 {
+                display: block;
+            }
+
+            body {
+                background-color: pink;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone">
+        <h1>Phone</h1>
+    </div>
+    <div class="landscape">
+        <h1>Landspace</h1>
+    </div>
+    <div class="tables">
+        <h1>Tables</h1>
+    </div>
+    <div class="desktop">
+        <h1>Desktop</h1>
+    </div>
+    <div class="large">
+        <h1>Large</h1>
+    </div>
+    <div class="xlarge">
+        <h1>xLarge</h1>
+    </div>
+
+</body>
+
+</html>
